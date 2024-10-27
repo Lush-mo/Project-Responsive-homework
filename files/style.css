@@ -85,6 +85,29 @@ p {
   color: var(--tertiary-color);
   font-style: normal;
 }
+.about-section h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+}
+.about-section h2 {
+  color: var(--tertiary-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: var(--font-family-second);
+}
+.about {
+  padding: 120px 60px;
+}
+.image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 4px;
+}
 
 @media (max-width: 900px) {
   .yoghurt-section {
