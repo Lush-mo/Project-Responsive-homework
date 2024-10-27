@@ -92,11 +92,11 @@ p {
     text-align: center;
   }
   .hero h2 {
-    font-size: 44px;
+    font-size: 50px;
     line-height: 2;
   }
-  h2 {
-    font-sixe: 44px;
+  .yoghurt-section h2 {
+    font-size: 44px;
   }
   .hero {
     padding: 80px 20px;
