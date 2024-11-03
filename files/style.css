@@ -157,8 +157,15 @@ footer .social-links {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  margin: 0 20px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
 }
-
+footer .social-links:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}
 @media (max-width: 900px) {
   .yoghurt-section {
     padding: 0;
