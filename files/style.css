@@ -1,9 +1,12 @@
 :root {
-  --font-family-main: "Playfair Display", Serif;
-  --font-family-second: "Poppins", Sans-serif;
-  --main-background-color: #f9f7fe;
-  --secondary-color: #6c63ff;
-  --tertiary-color: #272142;
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
 }
 
 h1,
@@ -12,187 +15,192 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-main);
-  font-weight: bold;
   color: black;
-}
-p {
-  font-family: var(--font-family-second);
-  font-style: bold;
-}
-.hero {
-  text-align: center;
-  padding: 160px 20px;
-  background-color: var(--main-background-color);
-}
-.hero h1 {
-  font-size: 36px;
-  line-height: 54px;
-  font-weight: 700;
-  color: var(--tertiary-color);
+  font-family: var(--heading-font-family);
   font-weight: bold;
-  font-family: var(--font-family-second);
 }
-.hero h2 {
+
+h1 {
   font-size: 96px;
-  font-weight: 700;
-  line-height: 128px;
+  line-height: 1.5;
 }
-.hero p {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  margin: 0;
-  color: var(--tertiary-color);
-}
-.btn-branding {
-  background-color: var(--secondary-color);
-  color: white;
-  border-radius: 4px;
-  margin-top: 10px;
-  padding: 15px 30px;
-}
-.yoghurt-section {
-  padding: 120px 60px;
-}
-.yoghurt-section h2 {
+
+h2 {
   font-size: 64px;
-  font-weight: 700;
-  line-height: 85px;
 }
-.yoghurt-section p {
-  font-family: var(--font-family-second);
+
+h3 {
+  font-size: 48px;
+}
+
+p {
+  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  font-weight: 400;
+}
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
   color: #272142;
 }
-.btn-branding-outline {
-  border: 1px solid var(--secondary-color);
-  font-family: var(--font-family-second);
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  text-align: center;
-  color: var(--secondary-color);
-  padding: 15px 30px;
-  border-radius: 4px;
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 24px;
 }
-.featured {
-  font-family: var(--font-family-second);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: var(--tertiary-color);
-  font-style: normal;
+
+.content-container {
+  padding: 60px 20px;
 }
-.about-section h1 {
-  font-style: normal;
-  font-weight: 700;
+
+.content h1 {
   font-size: 64px;
-  line-height: 85px;
+  line-height: 80px;
 }
-.about-section h2 {
-  color: var(--tertiary-color);
-  font-style: normal;
-  font-weight: 700;
+
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+
+  font-family: var(--default-font-family);
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.content {
+  margin: 30px;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
   font-size: 18px;
   line-height: 27px;
-  font-family: var(--font-family-second);
+  padding: 15px 30px;
 }
-.about-section {
-  padding: 160px 20px;
-}
-.image {
-  width: 450px;
-  height: 500px;
-  object-fit: cover;
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
   border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
-.about-section h3 {
-  font-family: var(--font-family-second);
+
+.project-desciption {
+  padding: 120px 60px;
 }
+
 .logo {
   max-height: 40px;
 }
+
+nav {
+  padding: 20px 0;
+}
+
 nav ul {
   padding: 0;
   margin: 0;
 }
+
 nav li {
   display: inline;
   list-style: none;
   line-height: 42px;
   margin-left: 15px;
-  font-weight: 400;
-  font-family: var(--font-family-second);
 }
-nav {
-  padding: 20px 0;
-}
+
 nav a {
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: #272142;
   transition: all 100ms ease-in-out;
 }
+
 nav a:hover,
 nav li.active a {
-  color: var(--secondary-color);
+  color: var(--branding-color);
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
 }
 
 footer .email-link {
-  font-size: 24px;
-  font-family: var(--font-family-second);
-  color: black;
-  line-height: 36px;
-  font-weight: 500;
   text-decoration: none;
+  color: black;
+  font-size: 24px;
 }
+
 footer .email-link:hover {
-  color: var(--secondary-color);
+  color: var(--branding-color);
 }
-footer .social-links {
-  color: var(--secondary-color);
-  background-color: var(--main-background-color);
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
+
+footer .social-links a {
   margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
   padding: 10px 14px;
   border-radius: 50%;
+  font-size: 18px;
   transition: all 100ms ease-in-out;
 }
-footer .social-links:hover {
+
+footer .social-links a:hover {
   color: white;
-  background-color: var(--secondary-color);
+  background: var(--branding-color);
 }
+
 @media (max-width: 900px) {
-  .yoghurt-section {
-    padding: 0;
-    text-align: center;
+  h1 {
+    font-size: 44px;
+    line-height: 1.5;
   }
-  .hero h2 {
-    font-size: 50px;
-    line-height: 2;
-  }
-  .yoghurt-section h2 {
+
+  h2 {
     font-size: 44px;
   }
-  .hero {
-    padding: 80px 20px;
+
+  h3 {
+    font-size: 26px;
   }
-  .image {
-    width: 350px;
-    height: 400px;
-  }
-  .about-section {
+
+  .content {
     text-align: center;
     padding: 0;
   }
-  .about-section h1 {
-    font-size: 50px;
-  }
-  nav a {
-    font-size: 14px;
+
+  .project-desciption {
+    padding: 0;
+    text-align: center;
   }
 }
