@@ -179,6 +179,13 @@ footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
 }
+.image {
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 
 @media (max-width: 900px) {
   h1 {
